@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lucia Ciapessoni — Designer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<svg style="display:none" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="bf" viewBox="0 0 481 544" fill="none">
+    <g transform="matrix(1,0,0,1,-1531.666369,-742.944244)">
+      <g transform="matrix(1.859112,0,0,1.859112,-1317.662884,-1103.598288)">
+        <path d="M1601.691,1240.157C1601.691,1240.157 1550.359,1145.131 1618.801,1073.023C1687.244,1000.914 1729.395,1004.701 1739.797,1013.136C1750.487,1021.804 1731.242,1037.579 1726.353,1065.69C1721.464,1093.8 1726.304,1138.356 1705.576,1168.353C1657.925,1237.312 1601.691,1240.157 1601.691,1240.157Z" style="fill:none;stroke:currentColor;stroke-width:7px;"/>
+      </g>
+      <g transform="matrix(1.859112,0,0,1.859112,-1317.662884,-1103.598288)">
+        <path d="M1601.691,1240.157C1601.691,1240.157 1649.488,1172.954 1738.801,1171.673C1828.114,1170.391 1785.567,1289.063 1725.59,1284.449C1665.614,1279.835 1601.691,1240.157 1601.691,1240.157Z" style="fill:none;stroke:currentColor;stroke-width:7px;"/>
+      </g>
+      <g transform="matrix(1.859112,0,0,1.859112,-1317.662884,-1103.598288)">
+        <path d="M1601.691,1241.013C1601.691,1241.013 1530.496,1201.838 1533.866,1079.837C1536.369,989.212 1572.776,991.143 1583.211,996.411C1595.757,1002.743 1589.298,1020 1596.181,1034.853C1603.064,1049.705 1622.723,1087.346 1618.343,1113.627C1613.962,1139.909 1601.691,1241.013 1601.691,1241.013Z" style="fill:none;stroke:currentColor;stroke-width:7px;"/>
+      </g>
+    </g>
+  </symbol>
+</svg>
+
+<canvas id="trail-canvas"></canvas>
+<div id="bf-cursor"><svg class="bf-svg" viewBox="0 0 481 544" fill="none"><use href="#bf" style="color:var(--green)"/></svg></div>
+
+<nav>
+  <a class="nav-logo" href="#">
+    <svg class="bf-svg" viewBox="0 0 481 544" fill="none"><use href="#bf" style="color:var(--green)"/></svg>
+    <span class="nav-name">Lucia Ciapessoni</span>
+  </a>
+  <div class="nav-right">
+    <ul class="nav-links">
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="cv-btn" href="cv nuovissimo.pdf" download>CV ↓</a>
+  </div>
+</nav>
+
+<section class="hero" id="hero">
+  <div id="hero-butterfly" aria-hidden="true">
+    <svg class="bf-svg" viewBox="0 0 481 544" fill="none"><use href="#bf" style="color:white"/></svg>
+  </div>
+  <div class="hero-tag">Interaction & Graphic Designer</div>
+  <h1><span class="scramble-text">Lucia</span><br><span class="scramble-text accent">Ciapessoni</span></h1>
+  <p class="hero-sub">Imagination can take you anywhere — through unexpected paths, where chaos finds its own order.</p>
+  <div class="hero-scroll"><div class="scroll-line"></div><span>Scroll to explore</span></div>
+</section>
+
+<section id="projects">
+  <div class="section-label">Selected works</div>
+  <div class="projects-intro fade-up">
+    <h2 class="scramble-text">Where ideas land</h2>
+    <p>A mix of interaction, identity and product design — each project a different road taken.</p>
+  </div>
+  <div class="projects-grid" id="projects-grid"></div>
+</section>
+
+<section id="about">
+  <div class="section-label">About</div>
+  <div class="about-grid fade-up">
+    <div class="about-text">
+      <h2 class="scramble-text">Art, code &amp; everything in between</h2>
+      <p>Background in Belle Arti, mind in interaction. I design experiences that blend 3D modeling, UI/UX and graphic design — always looking for the path less obvious.</p>
+      <div class="skills">
+        <div class="skills-title">Tools & disciplines</div>
+        <div class="skills-list">
+          <span class="skill-tag">Figma</span><span class="skill-tag">3D Modeling</span>
+          <span class="skill-tag">UI/UX Design</span><span class="skill-tag">Graphic Design</span>
+          <span class="skill-tag">Interaction Design</span><span class="skill-tag">Adobe Suite</span>
+          <span class="skill-tag">Motion</span>
+        </div>
+      </div>
+      <div class="butterfly-story">
+        <div class="butterfly-story-icon">
+          <svg class="bf-svg" viewBox="0 0 481 544" fill="none"><use href="#bf" style="color:var(--green)"/></svg>
+        </div>
+        <div class="butterfly-story-label">Why a butterfly</div>
+        <p>The butterfly is more than just a symbol to me; it is a personal representation. It embodies lightness and an apparent fragility, yet it remains elusive and difficult to capture: always moving, always exploring. With its vibrant colors and unpredictable paths, it reflects my deep curiosity and countless interests across art and technology. To me, the butterfly stands for continuous metamorphosis: an enduring drive to transform, adapt, and never stop improving.</p>
+      </div>
+    </div>
+    <div class="about-right">
+      <blockquote class="about-quote">
+        "Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world."
+        <cite>— Albert Einstein</cite>
+      </blockquote>
+      <button class="more-about-btn" id="open-about-modal">More about me →</button>
+      <div class="cv-block">
+        <div>
+          <div class="cv-block-label">Curriculum Vitae</div>
+          <div class="cv-block-title">Lucia Ciapessoni</div>
+          <div class="cv-block-sub">Interaction & Graphic Designer — 2025</div>
+        </div>
+        <a class="cv-download" href="cv.pdf" download>Download ↓</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-label">Get in touch</div>
+  <div class="contact-inner fade-up">
+    <h2 class="scramble-text">Let's make something<br><span class="accent">unexpected.</span></h2>
+    <div class="contact-links">
+      <a class="contact-link" href="mailto:ciapessonilucia@gmail.com">ciapessonilucia@gmail.com</a>
+      <a class="contact-link" href="https://www.linkedin.com/in/lucia-ciapessoni-36b7252a7" target="_blank">LinkedIn</a>
+      <a class="contact-link" href="https://behance.net" target="_blank">Behance</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>© 2025 Lucia Ciapessoni</span>
+  <span>Interaction & Graphic Designer</span>
+</footer>
+
+<!-- PROJECT MODAL -->
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal" id="modal">
+    <button class="modal-close" id="modal-close">✕ close</button>
+    <div class="modal-hero">
+      <div class="modal-hero-img" id="modal-hero-img"></div>
+      <div class="modal-hero-content">
+        <div class="modal-tags" id="modal-tags"></div>
+        <div class="modal-title" id="modal-title"></div>
+        <div class="modal-year" id="modal-year"></div>
+      </div>
+    </div>
+    <div class="modal-body" id="modal-body"></div>
+  </div>
+</div>
+
+<!-- ABOUT MODAL -->
+<div class="about-modal-overlay" id="about-modal-overlay">
+  <div class="about-modal">
+    <button class="about-modal-close" id="about-modal-close">✕ close</button>
+    <div class="about-modal-hero">
+      <img src="lucia_ciapessoni.jpg" alt="Lucia Ciapessoni">
+      <div class="about-modal-hero-content">
+        <div class="about-modal-name">Lucia Ciapessoni</div>
+        <div class="about-modal-role">Interaction & Graphic Designer</div>
+      </div>
+    </div>
+    <div class="about-modal-body">
+      <p class="about-modal-bio">Background in Graphic Design, Master in Interaction Design. I design experiences at the intersection of art, technology and curiosity — always looking for the path less obvious. Driven by a continuous desire to transform ideas into things that feel both meaningful and unexpected.</p>
+      <div class="about-modal-facts">
+        <div class="about-fact"><span class="fact-label">Based in</span><span class="fact-value">Cremona, IT</span></div>
+        <div class="about-fact"><span class="fact-label">Languages</span><span class="fact-value">Italian, English, German</span></div>
+        <div class="about-fact"><span class="fact-label">Education</span><span class="fact-value">Graphic Design — Interaction Design</span></div>
+        <div class="about-fact"><span class="fact-label">Interests</span><span class="fact-value">3D, motion, speculative design, type</span></div>
+      </div>
+      <div>
+        <div class="skills-chart-label">Skills</div>
+        <div class="skills-chart" id="skills-chart"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
